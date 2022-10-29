@@ -1,0 +1,199 @@
+header {
+    width      : $containerWidth;
+    margin     : auto !important;
+    height     : 4.5rem;
+    position   : relative;
+    background : none;
+    // top     : 0;
+    // left    : 7%;
+    padding    : 1rem !important;
+    z-index    : 12;
+
+    @media screen and (max-width: $lgscreen) {
+        width   : 100%;
+        // left : 0;
+    }
+
+    nav {
+        display        : flex;
+        padding        : 1rem !important;
+        background     : white;
+        flex-direction : row;
+        width          : 100%;
+        justify-content: space-between;
+        align-items    : center;
+        border-radius  : .5rem;
+        box-shadow     : 1px 1px 10px $secondaryColor;
+
+        @media screen and (max-width: $lgscreen) {
+            flex-direction: column;
+            gap           : .3rem;
+        }
+
+        .side1 {
+            display        : flex;
+            justify-content: space-between;
+            width          : 60%;
+
+            @media screen and (max-width: $lgscreen) {
+                flex-direction: column;
+                width         : 100%;
+            }
+
+            ul {
+
+                @media screen and (max-width: $lgscreen) {
+                    display: none;
+
+                    &.active {
+                        display: flex;
+                    }
+                }
+
+                display        : flex;
+                width          : 65%;
+                justify-content: space-between;
+                transition     : 1s;
+
+                @media screen and (max-width: $lgscreen) {
+                    flex-direction: column;
+                }
+
+                li {
+                    // border    : 1px solid red;
+                    list-style: none;
+                    padding   : .2rem 0 !important;
+                    width     : fit-content;
+                    transition: 1s;
+                    position  : relative;
+
+
+
+                    a {
+                        text-decoration: none;
+                        color          : $primaryColor;
+                        transition     : 1s;
+
+                        &:hover {
+                            color: $secondaryColor;
+                        }
+
+                        &::after {
+                            content   : '';
+                            position  : absolute;
+                            height    : 2px;
+                            background: $primaryColor;
+                            width     : 100%;
+                            transform : scale(0);
+                            bottom    : 0;
+                            transition: 1s;
+                            left      : 0;
+                        }
+
+                        &:hover::after {
+                            transform: scale(1);
+                        }
+
+                        &:active::after {
+                            transform: scale(1);
+                        }
+
+                        &.link::after {
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+
+            .brand {
+                @media screen and (max-width: $lgscreen) {
+                    display        : flex;
+                    justify-content: space-between;
+                    align-items    : center;
+                    width          : 60%;
+                }
+
+                h3 {
+                    font-weight: bolder;
+
+                    a {
+                        text-decoration: none;
+                        transition     : 1s;
+                        color          : $secondaryColor;
+
+                        &:hover {
+                            color: $primaryColor;
+                        }
+                    }
+                }
+            }
+
+            span {
+                cursor   : pointer;
+                font-size: 1.2rem;
+
+                .fa-bars {
+                    display: none;
+
+                    @media screen and (max-width: $lgscreen) {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .side2 {
+            @extend .side1;
+            width          : 40%;
+            justify-content: center;
+            gap            : .2rem;
+
+            @media screen and (max-width: $lgscreen) {
+                flex-direction: row;
+                width         : 100%;
+            }
+
+            span {
+                width          : 2.5rem;
+                height         : 2.5rem;
+                display        : flex;
+                justify-content: center;
+                align-items    : center;
+                border-radius  : 50%;
+                background     : $primaryColor;
+
+                @media screen and (max-width: $lgscreen) {
+                    width : 2rem;
+                    height: 2rem;
+
+                }
+
+                .fa-phone {
+                    color: $light;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                padding        : 0 .2rem !important;
+                border         : 2px solid $primaryColor;
+                display        : flex;
+                color          : $primaryColor;
+                font-weight    : bolder;
+                font-size      : 1.2rem;
+                align-items    : center;
+                border-radius  : 2rem;
+                transition     : .5s;
+
+                @media screen and (max-width: $lgscreen) {
+                    font-size: 1rem;
+                }
+
+                &:hover {
+                    background: $primaryColor;
+                    color     : $light;
+                }
+            }
+        }
+    }
+}

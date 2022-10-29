@@ -1,0 +1,31 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background   : $secondaryColor;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-track {
+    background   : $primaryColor;
+    width        : 7px;
+    border-radius: 30px;
+}
+
+
+main {
+    width          : $mobileContainer;
+    margin         : auto !important;
+    height         : calc(100vh - 4.5rem);
+    overflow       : hidden;
+    position       : relative;
+    padding        : 2rem 2rem !important;
+    overflow-y     : auto;
+    scrollbar-width: thin;
+    scrollbar-color: $secondaryColor $primaryColor;
+
+    @media screen and (min-width: $lgscreen) {
+        width: $containerWidth;
+    }
+}

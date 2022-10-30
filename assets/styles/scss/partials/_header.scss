@@ -70,6 +70,7 @@ header {
 
 
                     a {
+                        cursor         : pointer;
                         text-decoration: none;
                         color          : $primaryColor;
                         transition     : 1s;
@@ -90,11 +91,12 @@ header {
                             left      : 0;
                         }
 
-                        &:hover::after {
-                            transform: scale(1);
+                        &:focus {
+                            border : none;
+                            outline: none;
                         }
 
-                        &:active::after {
+                        &:hover::after {
                             transform: scale(1);
                         }
 
@@ -130,23 +132,28 @@ header {
 
             span {
                 cursor   : pointer;
-                font-size: 1.2rem;
+                font-size: 1.5rem;
 
                 .fa-bars {
                     display: none;
+                    color  : $primaryColor;
 
                     @media screen and (max-width: $lgscreen) {
                         display: block;
                     }
                 }
+
+                .fa-times {
+                    color: $secondaryColor;
+                }
             }
         }
 
         .side2 {
-            @extend .side1;
+            display        : flex;
             width          : 40%;
             justify-content: center;
-            gap            : .2rem;
+            gap            : .5rem;
 
             @media screen and (max-width: $lgscreen) {
                 flex-direction: row;
@@ -159,8 +166,18 @@ header {
                 display        : flex;
                 justify-content: center;
                 align-items    : center;
+                transition     : background 1s;
                 border-radius  : 50%;
                 background     : $primaryColor;
+
+                &:hover {
+                    background: white;
+                    border    : 2px solid $primaryColor;
+
+                    .fa-phone {
+                        color: $primaryColor;
+                    }
+                }
 
                 @media screen and (max-width: $lgscreen) {
                     width : 2rem;
@@ -169,7 +186,8 @@ header {
                 }
 
                 .fa-phone {
-                    color: $light;
+                    font-size: 1rem;
+                    color    : $light;
                 }
             }
 

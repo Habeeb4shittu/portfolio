@@ -20,12 +20,14 @@ main {
     height         : calc(100vh - 4.5rem);
     overflow       : hidden;
     position       : relative;
-    padding        : 2rem 2rem !important;
+    padding        : 2.5rem .5rem !important;
     overflow-y     : auto;
     scrollbar-width: thin;
     scrollbar-color: $secondaryColor $primaryColor;
 
     @media screen and (min-width: $lgscreen) {
-        width: $containerWidth;
+        width  : $containerWidth;
+        padding: 2rem 2rem !important;
+
     }
 }

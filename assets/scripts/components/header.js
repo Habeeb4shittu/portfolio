@@ -13,19 +13,19 @@ export function Header() {
                     </div>
                     <ul class="nav-links">
                         <li>
-                            <a href="#" class="home-link">Home</a>
+                            <a class="home-link">Home</a>
                         </li>
                         <li>
-                            <a href="#" class="about-link">About</a>
+                            <a class="about-link">About</a>
                         </li>
                         <li>
-                            <a href="#" class="serv-link">Services</a>
+                            <a class="serv-link">Services</a>
                         </li>
                         <li>
-                            <a href="#" class="port-link">Portfolio</a>
+                            <a class="port-link">Portfolio</a>
                         </li>
                         <li>
-                            <a href="#" class="con-link">Contact</a>
+                            <a class="con-link">Contact</a>
                         </li>
                     </ul>
                 </div>

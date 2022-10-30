@@ -1,15 +1,18 @@
-import { setHome } from './components/home.js'
+import { Header } from './components/header.js'
+import { homePage } from './components/pages/home.js'
 import { slideNav } from './components/functions/nav-slide.js'
-
 function main() {
     let main = (`
-        <main>
-
-        </main>
+    <main>
+    </main>
     `)
     $(main).insertAfter('header')
 }
-setHome()
+$(document).ready(() => {
+    homePage();
+})
+$("body").prepend(Header)
+homePage()
 slideNav()
 main()
 

@@ -1,0 +1,157 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background   : $secondaryColor;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-track {
+    background   : $primaryColor;
+    width        : 7px;
+    border-radius: 30px;
+}
+
+.home {
+    position       : relative;
+    background     : $primaryColor;
+    width          : 100%;
+    height         : 100%;
+    padding        : .5rem !important;
+    border-radius  : .5rem;
+    display        : flex;
+    overflow       : hidden;
+    overflow-y     : auto;
+    scrollbar-width: thin;
+    scrollbar-color: $secondaryColor $primaryColor;
+    flex-direction : row;
+    flex-wrap      : wrap;
+    gap            : 2rem;
+
+    .contents {
+        padding        : .5rem !important;
+        display        : flex;
+        flex-direction : row;
+        justify-content: space-between;
+        gap            : 1rem;
+        flex-wrap      : wrap;
+        width          : 100%;
+        align-items    : center;
+
+        @media screen and (min-width:$lgscreen) {
+            width          : 30%;
+            flex-direction : column;
+            justify-content: center;
+            gap            : 1rem;
+            flex-wrap      : nowrap;
+        }
+
+        @media screen and (min-width: $mdscreen) and (max-width: $lgscreen) {
+            width: 70%;
+        }
+
+        .my-image {
+            border-radius  : 50%;
+            position       : relative;
+            background     : $secondaryColor;
+            width          : 135px;
+            height         : 135px;
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+
+            @media screen and (min-width:$lgscreen) {
+                // margin: 0 !important;
+            }
+
+            img {
+                position     : absolute;
+                width        : 130px;
+                border-radius: 50%;
+            }
+        }
+
+        .hello {
+            width             : fit-content;
+            height            : fit-content;
+            border-radius     : 2rem;
+            text-align        : center;
+            display           : flex;
+            padding           : .4rem !important;
+            align-items       : center;
+            justify-content   : center;
+            font-size         : 2rem;
+            font-family       : cursive;
+            font-weight       : bolder;
+            background        : $light;
+            // word-break     : break-all;
+        }
+
+        .last {
+            @extend .hello;
+            font-family  : sans-serif;
+            width        : 100%;
+            height       : fit-content;
+            font-size    : 1.4rem;
+            border-radius: 4rem;
+            color        : $primaryColor;
+
+            @media screen and (min-width: $lgscreen) {
+                width: 95%;
+                width: fit-content;
+            }
+        }
+
+        .button {
+
+            button {
+                border-radius: 1rem;
+                background   : $primaryColor;
+                box-shadow   : 1px 1px 2px #0000004b;
+                padding      : .5rem !important;
+                color        : $accent;
+                transition   : 1s;
+
+                &:hover {
+                    color           : $accent;
+                    background-color: $secondaryColor;
+                }
+            }
+        }
+
+    }
+
+    .second-image {
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        margin         : auto !important;
+
+        @media screen and (min-width: $lgscreen) {
+            position: absolute;
+            right   : 1.5rem;
+            top     : 1.5rem;
+
+        }
+
+
+        img {
+            width        : 90%;
+            border-radius: 1rem;
+            transition   : 1s;
+
+            &:hover {
+                opacity: .8;
+            }
+
+            @media screen and (min-width: $mdscreen) and (max-width: $lgscreen) {
+                width: 75%;
+            }
+
+            @media screen and (min-width: $lgscreen) {
+                width: 490px;
+            }
+        }
+    }
+}

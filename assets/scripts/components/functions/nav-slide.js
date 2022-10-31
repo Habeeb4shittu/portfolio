@@ -7,7 +7,7 @@ import { portfolio } from "../pages/portfolio.js";
 
 export function slideNav() {
     function slideNavDown() {
-        $(".nav-links").slideDown(200);
+        $(".nav-links").slideDown(200)
         $(".nav-toggler").empty().append(` 
             <i class="fa fa-times" aria-hidden="true"></i>
         `)

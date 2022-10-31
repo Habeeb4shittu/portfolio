@@ -1,33 +1,21 @@
-::-webkit-scrollbar {
-    width: 10px;
-}
+@import './home';
+@import './about';
 
-::-webkit-scrollbar-thumb {
-    background   : $secondaryColor;
-    border-radius: 30px;
-}
-
-::-webkit-scrollbar-track {
-    background   : $primaryColor;
-    width        : 7px;
-    border-radius: 30px;
-}
 
 
 main {
-    width          : $mobileContainer;
-    margin         : auto !important;
-    height         : calc(100vh - 4.5rem);
-    overflow       : hidden;
-    position       : relative;
-    padding        : 2.5rem .5rem !important;
-    overflow-y     : auto;
-    scrollbar-width: thin;
-    scrollbar-color: $secondaryColor $primaryColor;
+    width        : $mobileContainer;
+    margin       : auto !important;
+    height       : calc(100vh - 4.5rem);
+    overflow     : hidden;
+    position     : relative;
+    padding      : 2.9rem .1rem .1rem !important;
+    border-radius: .5rem;
+
 
     @media screen and (min-width: $lgscreen) {
         width  : $containerWidth;
-        padding: 2rem 2rem !important;
+        padding: 1.5rem 1rem .1rem !important;
 
     }
 }

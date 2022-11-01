@@ -48,7 +48,9 @@
         }
 
         @media screen and (min-width: $mdscreen) and (max-width: $lgscreen) {
-            width: 70%;
+            width         : 70%;
+            flex-direction: column;
+            margin        : auto !important;
         }
 
         .my-image {

@@ -189,7 +189,8 @@
         gap                  : 1rem !important;
 
         @media screen and (min-width: $mdscreen) and (max-width: $lgscreen) {
-            width: 80%;
+            width          : 80%;
+            justify-content: center;
         }
 
         @media screen and (min-width: $lgscreen) {

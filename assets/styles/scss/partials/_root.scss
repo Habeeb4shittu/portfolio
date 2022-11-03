@@ -10,3 +10,47 @@ body {
     overflow  : hidden;
     background: $accent;
 }
+
+.preloader-container {
+    width          : 100vw;
+    height         : 100vh;
+    background     : $light;
+    z-index        : 50;
+    position       : relative;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    top            : 0;
+    left           : 0;
+
+    .preloader {
+        width        : 30px;
+        height       : 30px;
+        border-radius: 50%;
+        border       : 4px solid $primaryColor;
+        border-right : none;
+        animation    : preloader .4s infinite;
+    }
+}
+
+@keyframes preloader {
+    0% {
+        border       : 4px solid $secondaryColor;
+        border-bottom: none;
+    }
+
+    50% {
+        border     : 4px solid $primaryColor;
+        border-left: none;
+    }
+
+    75% {
+        border    : 4px solid $primaryColor;
+        border-top: none;
+    }
+
+    100% {
+        border      : 4px solid $primaryColor;
+        border-right: none;
+    }
+}

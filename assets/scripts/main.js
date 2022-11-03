@@ -9,14 +9,20 @@ function main() {
     `)
     $(main).insertAfter('header')
 }
+function preloader() {
+    let preloader = (`
+        <div class="preloader-container">
+            <div class="preloader"></div>
+        </div>
+    `)
+    $("body").prepend(preloader)
+}
 $(document).ready(() => {
     homePage();
+    $(".preloader-container").fadeOut();
 })
 $("body").prepend(Header)
 homePage()
 slideNav()
 main()
-
-ScrollReveal().reveal(".brand", { delay: 700, distance: '300px', origin: 'left' })
-
-ScrollReveal().reveal(".side2", { delay: 500, distance: '300px', origin: 'right' })
+preloader()

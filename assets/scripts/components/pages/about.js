@@ -7,8 +7,10 @@ export function aboutPage() {
                     <div class="socials-overlay">
                         <a href=""><i class="fab fa-linkedin soc" aria-hidden="true"></i></a>
                         <a href=""><i class="fab fa-facebook soc" aria-hidden="true"></i></a>
-                        <a href=""><i class="fab fa-instagram soc" aria-hidden="true"></i></a>
+                        <a href=""><i class="fab fa-twitter soc" aria-hidden="true"></i></a>
                         <a href=""><i class="fab fa-github soc" aria-hidden="true"></i></a>
+                        <a href=""><i class="fab fa-whatsapp soc" aria-hidden="true"></i></a>
+                        <a href=""><i class="fab fa-instagram soc" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="main">

@@ -170,7 +170,8 @@
             text-align  : justify;
 
             @media screen and (min-width: $mdscreen) and (max-width: $lgscreen) {
-                width: 80%;
+                width        : 80%;
+                margin-bottom: .5rem !important;
             }
         }
     }

@@ -1,0 +1,189 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background   : $secondaryColor;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-track {
+    background   : $primaryColor;
+    width        : 7px;
+    border-radius: 30px;
+}
+
+.services {
+    position       : relative;
+    width          : 100%;
+    height         : 100%;
+    padding        : .5rem !important;
+    border-radius  : .5rem;
+    display        : flex;
+    overflow       : hidden;
+    overflow-y     : auto;
+    scrollbar-width: thin;
+    scrollbar-color: $secondaryColor $primaryColor;
+    flex-direction : row;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+
+    .services-heading {
+        display        : flex;
+        flex-direction : row;
+        justify-content: space-between;
+        align-items    : center;
+        background     : $primaryColor;
+        padding        : 1rem !important;
+        height         : 100px;
+        width          : 100%;
+        border-radius  : .5rem;
+        margin         : 0 auto !important;
+        margin-bottom  : 1rem !important;
+
+        @media screen and (min-width: $lgscreen) {
+            width          : 80%;
+            justify-content: center;
+            gap            : 2rem;
+        }
+
+        .shake {
+            font-size: 3rem;
+            color    : $secondaryColor;
+        }
+
+        h1 {
+            font-size  : 2.1rem;
+            color      : $accent;
+            font-family: sans-serif;
+        }
+    }
+
+    .services-contents {
+        width          : 100%;
+        display        : flex;
+        flex-direction : column;
+        flex-wrap      : wrap;
+        width          : 100%;
+        justify-content: space-between;
+        margin         : 0 auto !important;
+        gap            : 1rem;
+
+        @media screen and (min-width: $lgscreen) {
+            width          : 80%;
+            justify-content: center;
+            gap            : 2rem;
+            flex-direction : row;
+        }
+
+        .service-card {
+            width          : 100%;
+            display        : flex;
+            flex-direction : column;
+            justify-content: space-between;
+            align-items    : center;
+            margin         : auto !important;
+            height         : 450px;
+            border-radius  : .5rem;
+            padding        : 1rem !important;
+            background     : #ffffff53;
+            border         : none;
+            transition     : 1s;
+            overflow       : hidden;
+            position       : relative;
+
+            &:hover {
+                border    : 2px solid $primaryColor;
+                background: $light;
+
+                .inter {
+                    background: $primaryColor;
+
+                    .ico {
+                        color: $light;
+                    }
+                }
+            }
+
+            @media screen and (min-width: $lgscreen) {
+                width: 45%;
+            }
+
+            @media screen and (min-width: $mdscreen) and (max-width: $lgscreen) {
+
+                width: 60%;
+            }
+
+            .body {
+                display        : flex;
+                flex-direction : column;
+                height         : 50%;
+                justify-content: space-between;
+
+                .title {
+                    width: 100%;
+
+                    h1 {
+                        font-size  : 1.25rem;
+                        font-family: sans-serif;
+                        font-weight: bolder;
+                    }
+                }
+
+                .divider {
+                    width        : 100%;
+                    height       : 1px;
+                    background   : #0000005e;
+                    border-radius: .5rem;
+                }
+
+                .text {
+                    color      : black;
+                    opacity    : .8;
+                    font-size  : 1rem;
+                    font-family: sans-serif;
+                }
+
+                .butt {
+                    button {
+                        width        : 100px;
+                        height       : 40px;
+                        border-radius: 1rem;
+                        border       : 1px solid #0000000d;
+                        background   : none;
+                        cursor       : pointer;
+                        font-weight  : bolder;
+                        font-size    : 1rem;
+                        transition   : 1s;
+
+                        &:hover {
+                            background: $primaryColor;
+                            color     : $light;
+                        }
+                    }
+                }
+            }
+
+            .inter {
+                width          : 150px;
+                height         : 190px;
+                background     : none;
+                display        : flex;
+                justify-content: center;
+                align-items    : center;
+                border-radius  : .5rem;
+                position       : absolute;
+                top            : 300px;
+                left           : 65%;
+                transform      : rotate(135deg);
+                transition     : 1s;
+
+                .ico {
+                    color    : black;
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+
+}

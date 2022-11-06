@@ -1,0 +1,53 @@
+footer {
+    width          : $containerWidth;
+    margin         : auto !important;
+    position       : relative;
+    height         : 2rem;
+    width          : 84%;
+    background     : $light;
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 1rem !important;
+    border-radius  : .5rem;
+
+    @media screen and (max-width: $lgscreen) {
+        width   : $mobileContainer;
+        // left : 0;
+    }
+
+    .copy {
+        color      : $secondaryColor;
+        font-family: sans-serif;
+        font-size  : .9rem;
+        opacity    : .8;
+
+        @media screen and (max-width: $lgscreen) {
+            font-size: .7rem;
+        }
+    }
+
+    .footer-socials {
+        width          : 55%;
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+
+        a {
+            .soc {
+                font-size : 1.4rem;
+                transition: 1s;
+                color     : $primaryColor;
+
+                @media screen and (max-width: $lgscreen) {
+                    font-size: 1.1rem;
+                }
+
+                &:hover {
+                    color: $secondaryColor;
+                }
+            }
+        }
+    }
+}

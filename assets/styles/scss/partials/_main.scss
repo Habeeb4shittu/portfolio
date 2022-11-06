@@ -1,12 +1,13 @@
 @import './home';
 @import './about';
+@import './services';
 
 
 
 main {
     width        : $mobileContainer;
     margin       : auto !important;
-    height       : calc(100vh - 4.5rem);
+    height       : calc(100vh - 6.5rem);
     overflow     : hidden;
     position     : relative;
     padding      : 2.9rem .1rem .1rem !important;

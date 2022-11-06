@@ -82,7 +82,7 @@
             flex-direction : column;
             justify-content: space-between;
             align-items    : center;
-            margin         : auto !important;
+            margin         : 0 auto 1rem auto !important;
             height         : 450px;
             border-radius  : .5rem;
             padding        : 1rem !important;
@@ -91,7 +91,6 @@
             transition     : 1s;
             overflow       : hidden;
             position       : relative;
-            margin-bottom  : 1rem !important;
 
             &:hover {
                 border    : 2px solid $primaryColor;
@@ -174,7 +173,7 @@
                 align-items    : center;
                 border-radius  : .5rem;
                 position       : absolute;
-                top            : 300px;
+                top            : 330px;
                 left           : 65%;
                 transform      : rotate(135deg);
                 transition     : 1s;

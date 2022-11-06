@@ -91,6 +91,7 @@
             transition     : 1s;
             overflow       : hidden;
             position       : relative;
+            margin-bottom  : 1rem !important;
 
             &:hover {
                 border    : 2px solid $primaryColor;

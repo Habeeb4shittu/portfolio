@@ -1,4 +1,4 @@
-
+import { servicePage } from "./services.js"
 export function homePage() {
     let content = (`
         <div class="home">
@@ -13,7 +13,7 @@ export function homePage() {
                     I am Habeeb, a Full-Stack Web Developer
                 </div>
                 <div class="button">
-                    <button class="btn">Lets Begin</button>
+                    <button class="btn begin">Lets Begin</button>
                 </div>
             </div>
             <div class="second-image">
@@ -22,4 +22,9 @@ export function homePage() {
         </div>
     `)
     $('main').empty(300).append(content)
+    $(".begin").click(() => {
+        servicePage()
+        $('.nav-links').find(".link").removeClass('link')
+        $(".serv-link").addClass('link')
+    })
 }

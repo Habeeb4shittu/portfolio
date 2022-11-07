@@ -1,7 +1,6 @@
 import { Header } from './components/header.js'
 import { Footer } from './components/footer.js'
 import { homePage } from './components/pages/home.js'
-import { servicePage } from './components/pages/services.js'
 import { slideNav } from './components/functions/nav-slide.js'
 function main() {
     let main = (`
@@ -19,7 +18,7 @@ function preloader() {
     $("body").prepend(preloader)
 }
 $(document).ready(() => {
-    servicePage();
+    homePage();
     $(".preloader-container").fadeOut();
 })
 

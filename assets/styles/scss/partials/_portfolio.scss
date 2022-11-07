@@ -1,0 +1,181 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background   : $secondaryColor;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-track {
+    background   : $primaryColor;
+    width        : 7px;
+    border-radius: 30px;
+}
+
+.portfolio {
+    position       : relative;
+    width          : 100%;
+    height         : 100%;
+    padding        : .5rem !important;
+    border-radius  : .5rem;
+    display        : flex;
+    overflow       : hidden;
+    overflow-y     : auto;
+    scrollbar-width: thin;
+    scrollbar-color: $secondaryColor $primaryColor;
+    flex-direction : row;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+
+    .heading {
+        background     : $primaryColor;
+        width          : 100%;
+        height         : 100px;
+        border-radius  : 1rem;
+        padding        : 1rem !important;
+        display        : flex;
+        align-items    : center;
+        justify-content: space-between;
+        margin         : 0 auto 1rem !important;
+
+        @media screen and (min-width: $mdscreen) {
+            width          : 80%;
+            justify-content: center;
+            gap            : 2rem;
+
+        }
+
+        .case {
+            font-size: 3rem;
+            color    : $light;
+        }
+
+        h2 {
+            font-size  : 2rem;
+            font-weight: bolder;
+            color      : $light;
+            font-family: sans-serif;
+        }
+    }
+
+    .cards {
+        width          : 100%;
+        display        : flex;
+        flex-direction : column;
+        align-items    : center;
+        justify-content: space-between;
+        flex-wrap      : wrap;
+        margin         : auto !important;
+
+        @media screen and (min-width: $lgscreen) {
+            width          : 80%;
+            justify-content: center;
+            gap            : 2rem;
+            flex-direction : row;
+        }
+
+        .card {
+            width             : 98%;
+            // border         : 2px solid $primaryColor;
+            background        : #e6e5e6;
+            padding           : 1rem !important;
+            border-radius     : 1rem;
+            display           : flex;
+            flex-direction    : column;
+            height            : 400px;
+            position          : relative;
+            overflow          : hidden;
+            border            : none;
+            justify-content   : space-between;
+            transition        : 1s;
+            margin-bottom     : 1.5rem !important;
+
+            @media screen and (min-width: $mdscreen) and (max-width: $lgscreen) {
+                width: 60%;
+            }
+
+            @media screen and (min-width: $lgscreen) {
+                width: 45%;
+            }
+
+            &:hover {
+                border: 2px solid $primaryColor;
+
+                .image {
+                    top      : 100px;
+                    transform: rotate(0);
+                }
+
+                .overlay {
+                    transform: scale(1);
+                }
+            }
+
+            .title {
+                h4 {
+                    color      : $primaryColor;
+                    font-size  : .9rem;
+                    font-family: sans-serif;
+                    font-weight: 400;
+                }
+
+                h2 {
+                    color      : black;
+                    font-size  : 1.6rem;
+                    font-weight: bolder;
+                    font-family: sans-serif;
+                }
+            }
+
+            .image {
+                width        : 90%;
+                height       : fit-content;
+                overflow     : hidden;
+                border-radius: 1rem;
+                transform    : rotate(10deg);
+                position     : absolute;
+                top          : 200px;
+                align-self   : center;
+                margin       : auto !important;
+                transition   : 1s;
+
+                @media screen and (min-width: $mdscreen) {
+                    width: 60%;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .overlay {
+                position       : absolute;
+                width          : 100%;
+                height         : 100%;
+                z-index        : 10;
+                top            : 0;
+                right          : 0;
+                display        : flex;
+                transition     : 1s;
+                justify-content: center;
+                align-items    : center;
+                border-radius  : inherit;
+                background     : #000000b8;
+                transform      : scale(0);
+
+                a {
+                    .eye {
+                        color     : $primaryColor;
+                        font-size : 2.8rem;
+                        transition: 1s;
+
+                        &:hover {
+                            color: $secondaryColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

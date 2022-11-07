@@ -1,0 +1,261 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background   : $secondaryColor;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-track {
+    background   : $primaryColor;
+    width        : 7px;
+    border-radius: 30px;
+}
+
+.contact {
+    position       : relative;
+    width          : 100%;
+    height         : 100%;
+    padding        : .5rem !important;
+    border-radius  : .5rem;
+    display        : flex;
+    overflow       : hidden;
+    overflow-y     : auto;
+    scrollbar-width: thin;
+    scrollbar-color: $secondaryColor $primaryColor;
+    flex-direction : row;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+
+    .heading {
+        background     : $primaryColor;
+        width          : 100%;
+        height         : 100px;
+        border-radius  : 1rem;
+        padding        : 1rem !important;
+        display        : flex;
+        align-items    : center;
+        justify-content: space-between;
+        margin         : 0 auto 1rem !important;
+
+        @media screen and (min-width: $mdscreen) {
+            width          : 80%;
+            justify-content: center;
+            gap            : 2rem;
+
+        }
+
+        .link {
+            font-size: 2.5rem;
+            color    : $light;
+        }
+
+        h2 {
+            font-size  : 2rem;
+            font-weight: bolder;
+            color      : $light;
+            font-family: sans-serif;
+        }
+    }
+
+    .content {
+        display        : flex;
+        flex-direction : column;
+        width          : 100%;
+        justify-content: space-between;
+        gap            : 1rem;
+        margin         : auto !important;
+
+        // border        : 1px solid red;
+        @media screen and (min-width: $mdscreen) {
+            width         : 80%;
+            flex-direction: row;
+        }
+
+        .touch {
+            display        : flex;
+            flex-direction : column;
+            width          : 100%;
+            justify-content: space-between;
+            gap            : 1rem;
+            max-height     : 250px;
+
+            @media screen and (min-width: $lgscreen) {
+                width: 48%;
+            }
+
+            .start {
+                width             : 100%;
+                display           : flex;
+                flex-direction    : column;
+                justify-content   : space-between;
+                // align-items    : center;
+                gap               : .5rem;
+
+                @media screen and (min-width: $lgscreen) {
+                    align-items    : center;
+                    justify-content: center;
+                }
+
+                h3 {
+                    color      : $primaryColor;
+                    opacity    : .9;
+                    font-size  : .8rem;
+                    font-family: sans-serif;
+                    font-weight: 500;
+                    text-align : left;
+                }
+
+                p {
+                    color      : black;
+                    font-size  : .9rem;
+                    font-family: sans-serif;
+                    font-weight: 700;
+                    text-align : justify;
+                }
+            }
+        }
+
+        .divider {
+            width     : 100%;
+            height    : 1px;
+            background: #00000028;
+        }
+
+        .connect {
+            display        : flex;
+            flex-direction : row;
+            align-items    : center;
+            justify-content: space-between;
+            gap            : .5rem;
+
+
+
+            .con {
+                display        : flex;
+                flex-direction : column;
+                align-items    : center;
+                justify-content: space-between;
+
+                h3 {
+                    color      : $primaryColor;
+                    font-size  : .9rem;
+                    font-family: sans-serif;
+                    font-weight: 700;
+                    text-align : justify;
+                }
+
+                a {
+                    text-decoration: none;
+                    font-size      : .9rem;
+                    font-family    : sans-serif;
+                    font-weight    : 700;
+                    text-align     : justify;
+                    color          : black;
+                    transition     : 1s;
+
+                    &:hover {
+                        color: $primaryColor;
+                    }
+                }
+            }
+        }
+
+        .form {
+            width : 100%;
+            margin: auto !important;
+
+            form {
+                width          : 90%;
+                display        : flex;
+                flex-direction : column;
+                justify-content: space-between;
+                align-items    : center;
+                gap            : 1rem;
+
+                .inputs {
+                    width          : 100%;
+                    display        : flex;
+                    justify-content: space-between;
+                    flex-direction : column;
+                    gap            : 1rem;
+
+                    @media screen and (min-width: $mdscreen) {
+                        flex-direction: row;
+                    }
+
+                    .form-floating {
+
+                        .form-control {
+                            border: 2px solid #00000022;
+
+                            &:focus {
+                                outline: none !important;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .textarena {
+                width: 100%;
+
+                .form-floating {
+                    textarea {
+                        padding: 1rem !important;
+                        border : 2px solid #00000022;
+                        height : 120px;
+                    }
+                }
+            }
+
+            .butt {
+                width         : 100%;
+                display       : flex;
+                flex-direction: column;
+                margin        : auto !important;
+                gap           : 1rem;
+
+                @media screen and (min-width: $mdscreen) {
+                    flex-direction : row;
+                    justify-content: space-between;
+                    align-items    : center;
+                }
+
+                .submit {
+                    width        : 120px;
+                    height       : 2.5rem;
+                    border       : 1px solid $primaryColor;
+                    border-radius: 1rem;
+                    cursor       : pointer;
+                    background   : none;
+                    font-size    : 1.3rem;
+                    font-weight  : 400;
+                    color        : $primaryColor;
+                    transition   : 1s;
+                    margin       : auto !important;
+
+                    &:hover {
+                        color     : $accent;
+                        background: $primaryColor;
+                        border    : none;
+                    }
+                }
+
+                .download {
+                    @extend .submit;
+                    width          : fit-content;
+                    padding        : .5rem !important;
+                    display        : flex;
+                    font-size      : 1rem;
+                    align-items    : center;
+                    justify-content: center;
+                    height         : 3rem;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

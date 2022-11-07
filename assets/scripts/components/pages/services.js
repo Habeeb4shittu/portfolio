@@ -1,4 +1,4 @@
-
+import { contactPage } from './contact.js'
 export function servicePage() {
     let content = (`
         <div class="services">
@@ -17,7 +17,7 @@ export function servicePage() {
                             Front-End Development with fully responsive and interactive User-Interface at an affordable Price
                         </div>
                         <div class="butt">
-                            <button>Order</button>
+                            <button class="order">Order</button>
                         </div>
                     </div>
                     <div class="inter">
@@ -34,7 +34,7 @@ export function servicePage() {
                             Back-End Development with PHP and Node.js at an affordable Price
                         </div>
                         <div class="butt">
-                            <button>Order</button>
+                            <button class="order">Order</button>
                         </div>
                     </div>
                     <div class="inter">
@@ -51,7 +51,7 @@ export function servicePage() {
                             Database Management With MySQL at an affordable Price
                         </div>
                         <div class="butt">
-                            <button>Order</button>
+                            <button class="order">Order</button>
                         </div>
                     </div>
                     <div class="inter">
@@ -61,6 +61,10 @@ export function servicePage() {
             </div>
         </div>
     `)
-
     $('main').empty(300).append(content)
+    $(".order").click(() => {
+        contactPage()
+        $('.nav-links').find(".link").removeClass('link')
+        $(".con-link").addClass('link')
+    })
 }

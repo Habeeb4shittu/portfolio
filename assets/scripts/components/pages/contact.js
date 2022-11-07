@@ -42,6 +42,7 @@ export function contactPage() {
                         </div>
                         <div class="textarena">
                             <div class="form-loft">
+                            <label for="textarea">Tell Me About The Project</label>
                               <textarea type="text" class="form-control" name="content" id="textarea" minlength="30" maxlength="1000" placeholder="Tell Me About The Project">
                               </textarea>
                             </div>

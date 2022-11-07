@@ -68,7 +68,7 @@
         margin         : auto !important;
         height         : calc(100% - 100px);
 
-        border     : 1px solid red;
+        // border     : 1px solid red;
         align-items: center;
         padding    : 1rem !important;
 
@@ -193,6 +193,7 @@
                     }
 
                     .form-loft {
+                        margin-bottom: 1rem !important;
 
                         .form-control {
                             border: 2px solid #00000022;
@@ -210,7 +211,7 @@
             .textarena {
                 width: 100%;
 
-                .form-floating {
+                .form-loft {
                     textarea {
                         padding: 1rem !important;
                         border : 2px solid #00000022;

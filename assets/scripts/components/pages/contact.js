@@ -29,24 +29,21 @@ export function contactPage() {
                 <div class="form">
                     <form method="post" action="https://formspree.io/f/mqkjwkjg">
                         <div class="inputs">
-                            <div class="form-floating">
+                            <div class="form-loft">
                             <input
                                 type="text"
-                                class="form-control" name="name" id="formId1" placeholder="">
-                            <label for="formId1">Name</label>
+                                class="form-control" name="name" id="formId1" placeholder="Your Name goes here">
                             </div>
-                            <div class="form-floating">
+                            <div class="form-loft">
                             <input
                                 type="text"
-                                class="form-control" name="email" id="formId2" placeholder="">
-                            <label for="formId2">Email</label>
+                                class="form-control" name="email" id="formId2" placeholder="Your Email goes here...">
                             </div>
                         </div>
                         <div class="textarena">
-                            <div class="form-floating">
-                              <textarea type="text" class="form-control" name="content" id="textarea" minlength="30" maxlength="1000">
+                            <div class="form-loft">
+                              <textarea type="text" class="form-control" name="content" id="textarea" minlength="30" maxlength="1000" placeholder="Tell Me About The Project">
                               </textarea>
-                              <label for="textarea">Tell Me About The Project</label>
                             </div>
                         </div>
                         <div class="butt">

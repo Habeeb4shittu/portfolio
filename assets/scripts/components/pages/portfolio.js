@@ -16,7 +16,7 @@ export function portfolio() {
                         <img src="./assets/images/front.jpg">
                     </div>
                     <div class="overlay">
-                        <a href="https://habeeb4shittu.github.io/tech_landers"><i class="fa fa-eye eye" aria-hidden="true"></i></a>
+                        <a href="https://habeeb4shittu.github.io/tech_landers" target="_blank"><i class="fa fa-eye eye" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="card">
@@ -28,7 +28,7 @@ export function portfolio() {
                         <img src="./assets/images/calc.jpg">
                     </div>
                     <div class="overlay">
-                        <a href="https://habeeb4shittu.github.io/sci_calc"><i class="fa fa-eye eye" aria-hidden="true"></i></a>
+                        <a href="https://habeeb4shittu.github.io/sci_calc" target="_blank"><i class="fa fa-eye eye" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="card">
@@ -40,7 +40,7 @@ export function portfolio() {
                         <img src="./assets/images/chat.jpg">
                     </div>
                     <div class="overlay">
-                        <a href="https://habeeb4shittu.github.io/Chat-bot"><i class="fa fa-eye eye" aria-hidden="true"></i></a>
+                        <a href="https://habeeb4shittu.github.io/Chat-bot" target="_blank"><i class="fa fa-eye eye" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>

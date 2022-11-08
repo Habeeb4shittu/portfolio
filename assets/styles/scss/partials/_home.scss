@@ -64,6 +64,7 @@
             display        : flex;
             justify-content: center;
             align-items    : center;
+            margin-bottom  : 1rem !important;
 
             @media screen and (min-width:$lgscreen) {
                 // margin: 0 !important;
@@ -90,6 +91,7 @@
             font-weight       : bolder;
             background        : $light;
             // word-break     : break-all;
+            margin-bottom     : 1rem !important;
         }
 
         .last {
@@ -100,6 +102,7 @@
             font-size    : 1.4rem;
             border-radius: 4rem;
             color        : $primaryColor;
+            margin-bottom: 1rem !important;
 
             @media screen and (min-width: $lgscreen) {
                 width: 95%;

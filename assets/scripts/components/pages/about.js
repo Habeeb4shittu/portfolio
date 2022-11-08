@@ -91,7 +91,7 @@ export function aboutPage() {
                                         Name
                                     </p>
                                     <p class="col2">
-                                        Habeeb Shittu
+                                        Shittu Habeebllah A.
                                     </p>
                                 </div>
                                 <div class="rows">

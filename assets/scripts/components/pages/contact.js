@@ -42,9 +42,7 @@ export function contactPage() {
                         </div>
                         <div class="textarena">
                             <div class="form-loft">
-                            <label for="textarea">Tell Me About The Project</label>
-                              <textarea type="text" class="form-control" name="content" id="textarea" minlength="30" maxlength="1000" placeholder="Tell Me About The Project">
-                              </textarea>
+                              <textarea type="text" class="form-control the-text" name="content" id="textarea" minlength="30" maxlength="1000" placeholder="Tell Me About The Project"></textarea>
                             </div>
                         </div>
                         <div class="butt">
@@ -56,6 +54,5 @@ export function contactPage() {
             </div>
         </div>
     `)
-
     $('main').empty(300).append(content)
 }

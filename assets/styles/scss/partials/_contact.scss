@@ -229,9 +229,11 @@
                         }
                     }
 
-                    .word-count {
-                        color    : #00000061;
+                    .word-count,
+                    .span-count {
+                        color    : $secondaryColor;
                         font-size: .8rem;
+                        opacity  : .7;
                     }
                 }
             }

@@ -43,6 +43,7 @@ export function contactPage() {
                         <div class="textarena">
                             <div class="form-loft">
                               <textarea type="text" class="form-control the-text" name="content" id="textarea" minlength="30" maxlength="1000" placeholder="Tell Me About The Project"></textarea>
+                              <p class="word-count"><span class="span-count">1000</span> Characters Left</p>
                             </div>
                         </div>
                         <div class="butt">
@@ -55,4 +56,8 @@ export function contactPage() {
         </div>
     `)
     $('main').empty(300).append(content)
+    $(".the-text").on('input', () => {
+        // console.log($(".the-text").val());
+        $(".span-count").empty().append(1000 - $(".the-text").val().length)
+    })
 }

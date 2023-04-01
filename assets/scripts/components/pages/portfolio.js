@@ -58,7 +58,7 @@ export function portfolio()
                 </div>
                 <div class="card">
                     <div class="title">
-                        <h4>jQuery</h4>
+                        <h4>jQuery, Ajax</h4>
                         <h2>Movie Search</h2>
                     </div>
                     <div class="image">
@@ -66,6 +66,18 @@ export function portfolio()
                     </div>
                     <div class="overlay">
                         <a href="https://habeeb4shittu.github.io/movie" target="_blank"><i class="fa fa-eye eye" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="title">
+                        <h4>PHP, Ajax, MySQL</h4>
+                        <h2>Chat App</h2>
+                    </div>
+                    <div class="image">
+                        <img src="./assets/images/chat-app.png">
+                    </div>
+                    <div class="overlay">
+                        <a href="https://github.com/Habeeb4shittu/chat" target="_blank"><i class="fa fa-eye eye" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>

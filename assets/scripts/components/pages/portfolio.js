@@ -1,5 +1,6 @@
 
-export function portfolio() {
+export function portfolio()
+{
     let content = (`
         <div class="portfolio">
             <div class="heading">
@@ -34,13 +35,37 @@ export function portfolio() {
                 <div class="card">
                     <div class="title">
                         <h4>jQuery</h4>
-                        <h2>Chat Box</h2>
+                        <h2>Chat Bot</h2>
                     </div>
                     <div class="image">
                         <img src="./assets/images/chat.jpg">
                     </div>
                     <div class="overlay">
                         <a href="https://habeeb4shittu.github.io/Chat-bot" target="_blank"><i class="fa fa-eye eye" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="title">
+                        <h4>jQuery</h4>
+                        <h2>Gradient Generator</h2>
+                    </div>
+                    <div class="image">
+                        <img src="./assets/images/gradient_generator.png">
+                    </div>
+                    <div class="overlay">
+                        <a href="https://habeeb4shittu.github.io/gradient_generator" target="_blank"><i class="fa fa-eye eye" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="title">
+                        <h4>jQuery</h4>
+                        <h2>Movie Search</h2>
+                    </div>
+                    <div class="image">
+                        <img src="./assets/images/movie.png">
+                    </div>
+                    <div class="overlay">
+                        <a href="https://habeeb4shittu.github.io/movie" target="_blank"><i class="fa fa-eye eye" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>

@@ -64,7 +64,7 @@ header {
                     list-style: none;
                     padding   : .2rem 0 !important;
                     width     : fit-content;
-                    transition: 1s;
+                    transition: .5s;
                     position  : relative;
 
 
@@ -87,7 +87,7 @@ header {
                             width     : 100%;
                             transform : scale(0);
                             bottom    : 0;
-                            transition: 1s;
+                            transition: .5s;
                             left      : 0;
                         }
 

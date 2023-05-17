@@ -199,7 +199,7 @@
                             border    : 2px solid #00000022;
                             height    : 50px;
                             padding   : .5rem !important;
-                            transition: 1s;
+                            transition: .5s;
 
                             &:focus {
                                 outline   : 1px solid $primaryColor !important;
@@ -216,7 +216,7 @@
 
                 .form-loft {
                     textarea {
-                        transition: 1s;
+                        transition: .5s;
                         padding   : 1rem !important;
                         border    : 2px solid #00000022;
                         height    : 150px;

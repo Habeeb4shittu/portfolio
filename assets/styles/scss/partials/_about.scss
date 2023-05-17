@@ -125,7 +125,7 @@
                 top            : 0;
                 left           : 0;
                 border-radius  : 1rem;
-                transition     : 1s;
+                transition     : .5s;
                 background     : #000000d3;
                 transform      : scaleX(0);
                 display        : flex;
@@ -141,7 +141,7 @@
                 .soc {
                     font-size : 2rem;
                     color     : $primaryColor;
-                    transition: 1s;
+                    transition: .5s;
 
                     &:hover {
                         color: $secondaryColor;

@@ -37,7 +37,7 @@ footer {
         a {
             .soc {
                 font-size : 1.4rem;
-                transition: 1s;
+                transition: .5s;
                 color     : $primaryColor;
 
                 @media screen and (max-width: $lgscreen) {

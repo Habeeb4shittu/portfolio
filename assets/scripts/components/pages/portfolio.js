@@ -46,7 +46,7 @@ export function portfolio()
                 </div>
                 <div class="card">
                     <div class="title">
-                        <h4>jQuery</h4>
+                        <h4>jQuery, Scss</h4>
                         <h2>Gradient Generator</h2>
                     </div>
                     <div class="image">
